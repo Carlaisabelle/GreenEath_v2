@@ -1,0 +1,38 @@
+.dropdown-menu {
+  border: none;
+  padding-top:0;
+  margin-top: 0;
+}
+
+.nav-link {
+    font-size: large;
+    color: $primary;
+
+    &:hover {
+      color: $secondary;
+      font-weight: bolder;
+      font-style: italic;
+      cursor: pointer;
+    }
+
+    &:focus {
+      color: $secondary !important;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    &:active {
+      color: $secondary;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    &:visited:active {
+      color: $secondary;
+    }
+  }
+
+  .active {
+    color: $secondary !important;
+    font-weight: bold;
+}

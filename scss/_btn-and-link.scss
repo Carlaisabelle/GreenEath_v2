@@ -1,0 +1,25 @@
+.link:hover {
+    color: $secondary;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btn-outline-primary:hover {
+    background: lighten($color: $secondary, $amount: 8);
+    color: darken($color: $primary, $amount: 8);
+    font-weight: bolder;
+    text-decoration: solid;
+    cursor: pointer;
+}
+
+.card-footer {
+    border: none !important;
+    background: none; 
+}
+
+.btn-project {
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    justify-items: center;
+}

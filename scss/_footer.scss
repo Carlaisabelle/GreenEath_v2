@@ -1,0 +1,14 @@
+.copy {
+    color: $secondary;
+    font-weight: bold;
+}
+
+.bi {
+    color: $primary;
+    font-size: 2em;
+
+    &:hover {
+        color: $secondary;
+        cursor: pointer;
+    }
+}

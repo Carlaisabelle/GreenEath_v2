@@ -1,0 +1,11 @@
+@use 'custom';
+
+$primary: #5cbd2f;
+$secondary: #5ca2f8;
+
+@import 'navigation';
+@import 'btn-and-link';
+@import 'text-styles';
+@import 'form';
+@import 'contacts';
+@import 'footer';

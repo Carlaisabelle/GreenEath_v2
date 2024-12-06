@@ -1,0 +1,23 @@
+.main-title {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+
+    &__project {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.logo {
+    &__adject {
+        color: $primary;
+    }
+    
+    &__word {
+        color: $secondary;
+    }
+}
+
+.long-text {
+    font-size: 1.1em;
+}

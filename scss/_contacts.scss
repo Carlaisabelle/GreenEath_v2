@@ -1,0 +1,16 @@
+.contact-item {
+    font-weight: bold;
+    
+}
+
+.mockup-link {
+    color: $primary;
+    text-decoration: underline;
+
+    &:hover {
+        color: $secondary;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+    }
+}
