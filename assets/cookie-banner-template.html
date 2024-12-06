@@ -1,0 +1,36 @@
+<!-- Cookie Banner -->
+<div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">🍪 Questo sito usa dei cookies per garantirti la migliore esperienza di navigazione possibile. <a href="https://www.cookiesandyou.com/" class="link" target="blank">Scopri di più</a>
+    <button type="button" class="btn btn-outline-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">Ho capito e accetto i cookies strettamente necessari</button>
+  </div>
+  <!-- End of Cookie Banner -->
+  <script>
+    /* Javascript to show and hide cookie banner using localstorage */
+    /* Shows the Cookie banner */
+    function showCookieBanner(){
+      let cookieBanner = document.getElementById("cb-cookie-banner");
+      cookieBanner.style.display = "block";
+    }
+
+    // Assigning values to window object
+    window.onload = initializeCookieBanner();
+    window.cb_hideCookieBanner = hideCookieBanner;
+
+    /* Hides the Cookie banner and saves the value to localstorage */
+    function hideCookieBanner(){
+      localStorage.setItem("cb_isCookieAccepted", "yes");
+      let cookieBanner = document.getElementById("cb-cookie-banner");
+      cookieBanner.style.display = "none";
+    }
+
+    /* Checks the localstorage and shows Cookie banner based on it. */
+    function initializeCookieBanner(){
+      let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
+      if(isCookieAccepted === null) {
+        localStorage.setItem("cb_isCookieAccepted", "no");
+        showCookieBanner();
+      }
+      if(isCookieAccepted === "no"){
+        showCookieBanner();
+      }
+    }
+  </script>
